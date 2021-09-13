@@ -32,8 +32,8 @@ use Snlbaral\NepaliDate\NepaliDate;
 echo new NepaliDate();
 //सोमबार, भदौ २८, २o७८
 
-echo new NepaliDate("l, M d");
-//सोमबार, भदौ २८
+echo new NepaliDate("M d, l");
+//भदौ २८, सोमबार
 ```
 
 **Parameters**

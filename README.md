@@ -37,7 +37,7 @@ echo new NepaliDate("l, M d");
 ```
 
 **Parameters**
-
+```php
 /**
 	 * @param string $format Date Format (i.e. "Y-m-d" or "l, m") | Default = "l, M d, Y"
 	 * @param boolean $convert convert number/digits to nepali numbers (i.e. १) | Default = true
@@ -45,7 +45,7 @@ echo new NepaliDate("l, M d");
 */
 echo new NepaliDate("l, M d", false);
 //सोमबार, भदौ 28
-
+```php
 
 
 **Available Options**

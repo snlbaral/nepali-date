@@ -1,6 +1,9 @@
 <?php
 
 namespace Snlbaral\NepaliDate;
+use \Exception;
+use \DateTime;
+
 
 class NepaliDate {
 
@@ -27,21 +30,21 @@ class NepaliDate {
 
     private function checkDate() {
         try {
-            if(!DateTime::createFromFormat($this->format, date($this->format))) {
+            if(!\DateTime::createFromFormat($this->format, date($this->format))) {
             	http_response_code(400);	
-                throw new Exception("Given Date Format is Invalid.");
+                throw new \Exception("Given Date Format is Invalid.");
             }
-            if(!file_exists("nepali_length.txt")) {
+            if(!file_exists(__DIR__."\\nepali_length.txt")) {
 				http_response_code(404);
-				throw new Exception("nepali_length.txt file not found");
+				throw new \Exception("nepali_length.txt file not found");
 			}
             $this->eng_date = date($this->format);
-            $this->nepali_length = json_decode(file_get_contents("nepali_length.txt"), true);
+            $this->nepali_length = json_decode(file_get_contents(__DIR__."\\nepali_length.txt"), true);
             $this->parseDate();
         } catch(\Throwable $e) {
-			throw new Exception($e->getMessage());
+			throw new \Exception($e->getMessage());
         } catch(\Exception $e) {
-			throw new Exception($e->getMessage());
+			throw new \Exception($e->getMessage());
         }        
     }
 

@@ -39,9 +39,9 @@ echo new NepaliDate("l, M d");
 **Parameters**
 ```php
 /**
-	 * @param string $format Date Format (i.e. "Y-m-d" or "l, m") | Default = "l, M d, Y"
-	 * @param boolean $convert convert number/digits to nepali numbers (i.e. १) | Default = true
-	 * @return string Nepali Date.
+ * @param string $format Date Format (i.e. "Y-m-d" or "l, m") | Default = "l, M d, Y"
+ * @param boolean $convert convert number/digits to nepali numbers (i.e. १) | Default = true
+ * @return string Nepali Date.
 */
 echo new NepaliDate("l, M d", false);
 //सोमबार, भदौ 28

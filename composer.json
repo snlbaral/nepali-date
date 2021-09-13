@@ -1,0 +1,27 @@
+{
+    "name": "snlbaral/nepali-date",
+    "description": "Nepali Date for PHP.",
+    "homepage": "https://github.com/snlbaral/nepali-date",
+    "license": "BSD-3-Clause",
+    "prefer-stable": true,
+    "keywords": [
+        "snlbaral",
+        "nepali-date",
+        "php",
+        "date-converter"
+    ],
+    "authors": [
+        {
+            "name": "Sunil Baral"
+        }
+    ],
+    "support": {
+        "email": "snlbaral@gmail.com"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Snlbaral\\NepaliDate\\": "src/"
+        }
+    }
+}
